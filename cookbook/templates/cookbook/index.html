@@ -1,19 +1,19 @@
 <html>
 <head>
-    <title>Recipes without Product</title>
+    <title>Recipes Without Product</title>
 </head>
 <body>
-    <h1>Recipes without Product</h1>
+    <h1>Recipes Without Product</h1>
     <table>
         <tr>
             <th>ID</th>
             <th>Name</th>
         </tr>
         {% for recipe in recipes %}
-        <tr>
-            <td>{{ recipe.id }}</td>
-            <td>{{ recipe.name }}</td>
-        </tr>
+            <tr>
+                <td>{{ recipe.id }}</td>
+                <td>{{ recipe.name }}</td>
+            </tr>
         {% endfor %}
     </table>
 </body>
