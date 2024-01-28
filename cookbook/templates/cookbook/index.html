@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Recipes without Product</title>
+</head>
+<body>
+    <h1>Recipes without Product</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+        {% for recipe in recipes %}
+        <tr>
+            <td>{{ recipe.id }}</td>
+            <td>{{ recipe.name }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>  
