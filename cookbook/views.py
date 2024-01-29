@@ -17,7 +17,7 @@ def add_product_to_recipe(request, recipe_id, product_id, weight):
 
 def cook_recipe(request, recipe_id):
     recipe = get_object_or_404(Recipe, pk=recipe_id)
-    for recipe_product in recipe.recipeproducts_set.all():
+    for recipe_product in recipe.products_set.all():
         recipe_product.product.times_cooked += 1
         recipe_product.product.save()
 
